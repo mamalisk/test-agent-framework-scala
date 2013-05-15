@@ -8,15 +8,14 @@ case class Memory(id: String) {
 
   def isEmpty: Boolean = core.isEmpty
 
-  def keyIsFound(key: Any, option: Option[List[(Any, Any)]]): (Any, Any) = option.get.find(pair => pair._1 == key || pair.equals(key)).getOrElse(("", ""))
-
   def updateKeyValuePairs(pair: (Any, Any), keyValuePairs: Option[List[(Any, Any)]]): List[(Any, Any)] = {
     val actualPairs: List[(Any, Any)] = keyValuePairs.get
     var result = actualPairs
-      result = for {actualPair <- actualPairs
-        if(actualPair._1 != pair._1)
-      } yield actualPair
-      result = result.+:(pair)
+    result = for {
+      actualPair <- actualPairs
+      if (actualPair._1 != pair._1)
+    } yield actualPair
+    result = result.+:(pair)
     result
   }
 

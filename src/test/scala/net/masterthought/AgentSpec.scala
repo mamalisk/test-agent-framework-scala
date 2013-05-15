@@ -53,11 +53,11 @@ class AgentSpec extends WordSpec with MustMatchers {
   "Storing object to agent's memory" should {
     val agent = Agent()
     "be possible" in {
-      agent.bearInMind(default,default,default)
+      agent.bearInMind(default, default, default)
     }
     "as well as remembering them" in {
-      agent.recallFromMemory(default,default) must not be None
-      agent.recallFromMemory(default,default) must be === default
+      agent.recallFromMemory(default, default) must not be None
+      agent.recallFromMemory(default, default) must be === default
     }
   }
 }
