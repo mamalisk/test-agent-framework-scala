@@ -8,14 +8,15 @@ case class Memory(id: String) {
 
   def isEmpty: Boolean = core.isEmpty
 
+  def currentSize : Int = core.size
+
   def updateKeyValuePairs(pair: (Any, Any), keyValuePairs: Option[List[(Any, Any)]]): List[(Any, Any)] = {
     val actualPairs: List[(Any, Any)] = keyValuePairs.get
     var result = actualPairs
-    result = for {
-      actualPair <- actualPairs
-      if (actualPair._1 != pair._1)
-    } yield actualPair
-    result = result.+:(pair)
+      result = for {actualPair <- actualPairs
+        if(actualPair._1 != pair._1)
+      } yield actualPair
+      result = result.+:(pair)
     result
   }
 
@@ -47,4 +48,13 @@ case class Memory(id: String) {
   private def getCategories(): Set[Any] = core.keys.toSet
   private def notFoundEx = throwEx("Not found")
   def throwEx(message: String*) = throw new RuntimeException(message.toString())
+
+  def throwMe(any:Any) = any match {
+    case string:String => throwEx(string)
+    case pair @ (key,value) => throwEx(s"$pair with $key -> $value")
+    case _ => {
+      val s : String = any.toString
+      throwEx(s"Object: $s")
+    }
+  }
 }

@@ -36,6 +36,15 @@ class AgentSpec extends WordSpec with MustMatchers {
       agent.bearInMind("category", "key", "value2")
       agent.recallFromMemory("category", "key") must be === "value2"
     }
+
+    "store data of different types" in {
+      val agent = Agent()
+      agent.bearInMind("category","key","value")
+      agent.bearInMind("category",default,default)
+      agent.bearInMind(default,default,default)
+      agent.memory.isEmpty must be === false
+      agent.memory.currentSize must be === 3
+    }
   }
 
   "Calling 'recall' on an Agent" should {
