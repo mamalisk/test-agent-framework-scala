@@ -20,7 +20,7 @@ class AgentIntegrationSpec extends WordSpec with MustMatchers {
   "Recalling FirefoxDriver from an Agent" should {
     "be possible" in {
       val agent = Agent()
-      agent.obtain("browser", new FirefoxDriver)
+      agent + ("browser", new FirefoxDriver)
       agent.use("browser").asInstanceOf[WebDriver].quit()
     }
   }
