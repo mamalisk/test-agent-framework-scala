@@ -1,0 +1,10 @@
+[0m[[0minfo[0m] [0m[32mAgentSpec:[0m[0m
+[0m[[0minfo[0m] [0m[32mCalling 'obtain' on an Agent[0m[0m
+[0m[[0minfo[0m] [0m[32m- should remember his ability[0m[0m
+[0m[[0minfo[0m] [0m[32mCalling 'use' on an Agent[0m[0m
+[0m[[0minfo[0m] [0m[32m- should recall the ability and use it[0m[0m
+[0m[[0minfo[0m] [0m[32mCalling 'bearInMind' on an Agent[0m[0m
+[0m[[0minfo[0m] [0m[32m- should update his memory[0m[0m
+[0m[[0minfo[0m] [0m[32mCalling 'recall' on an Agent[0m[0m
+[0m[[0minfo[0m] [0m[32m- should return the stored object[0m[0m
+[0m[[0minfo[0m] [0m[32m- should or return 'None' if the item is not there[0m[0m

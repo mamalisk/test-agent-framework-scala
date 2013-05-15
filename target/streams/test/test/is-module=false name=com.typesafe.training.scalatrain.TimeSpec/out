@@ -1,0 +1,10 @@
+[info] TimeSpec:
+[info] Creating a Time
+[info] - should throw an IllegalArgumentException for hours not within 0 and 23
+[info] - should throw an IllegalArgumentException for minutes not within 0 and 59
+[info] The default arguments for hours and minutes
+[info] - should be equal to 0
+[info] asMinutes
+[info] - should be initialized correctly
+[info] Calling minus or -
+[info] - should return the correct difference in minutes

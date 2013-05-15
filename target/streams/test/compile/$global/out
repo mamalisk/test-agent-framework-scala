@@ -1,0 +1,39 @@
+[0m[[0mdebug[0m] [0m[0m
+[0m[[0mdebug[0m] [0mInitial source changes: [0m
+[0m[[0mdebug[0m] [0m	removed:Set()[0m
+[0m[[0mdebug[0m] [0m	added: Set()[0m
+[0m[[0mdebug[0m] [0m	modified: Set(/Users/kostasmamalis/development/personal/scala/scala-course/taf-scala/src/test/scala/net/masterthought/AgentSpec.scala)[0m
+[0m[[0mdebug[0m] [0mRemoved products: Set(/Users/kostasmamalis/development/personal/scala/scala-course/taf-scala/target/scala-2.10/test-classes/net/masterthought/AgentSpec$MyClass.class, /Users/kostasmamalis/development/personal/scala/scala-course/taf-scala/target/scala-2.10/test-classes/net/masterthought/AgentSpec$MyClass$.class)[0m
+[0m[[0mdebug[0m] [0mModified external sources: Set(net.masterthought.Agent$, net.masterthought.Agent)[0m
+[0m[[0mdebug[0m] [0mModified binary dependencies: Set()[0m
+[0m[[0mdebug[0m] [0mInitial directly invalidated sources: Set(/Users/kostasmamalis/development/personal/scala/scala-course/taf-scala/src/test/scala/net/masterthought/AgentSpec.scala)[0m
+[0m[[0mdebug[0m] [0m[0m
+[0m[[0mdebug[0m] [0mSources indirectly invalidated by:[0m
+[0m[[0mdebug[0m] [0m	product: Set(/Users/kostasmamalis/development/personal/scala/scala-course/taf-scala/src/test/scala/net/masterthought/AgentSpec.scala)[0m
+[0m[[0mdebug[0m] [0m	binary dep: Set()[0m
+[0m[[0mdebug[0m] [0m	external source: Set(/Users/kostasmamalis/development/personal/scala/scala-course/taf-scala/src/test/scala/net/masterthought/AgentSpec.scala)[0m
+[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set(/Users/kostasmamalis/development/personal/scala/scala-course/taf-scala/src/test/scala/net/masterthought/AgentSpec.scala)[0m
+[0m[[0mdebug[0m] [0mRecompiling all 1 sources: invalidated sources (1) exceeded 50.0% of all sources[0m
+[0m[[0minfo[0m] [0mCompiling 1 Scala source to /Users/kostasmamalis/development/personal/scala/scala-course/taf-scala/target/scala-2.10/test-classes...[0m
+[0m[[0mdebug[0m] [0mRunning cached compiler 3c937f66, interfacing (CompilerInterface) with Scala compiler version 2.10.1[0m
+[0m[[0mdebug[0m] [0mCalling Scala compiler with arguments  (CompilerInterface):[0m
+[0m[[0mdebug[0m] [0m	-unchecked[0m
+[0m[[0mdebug[0m] [0m	-deprecation[0m
+[0m[[0mdebug[0m] [0m	-Xlint[0m
+[0m[[0mdebug[0m] [0m	-language:_[0m
+[0m[[0mdebug[0m] [0m	-target:jvm-1.6[0m
+[0m[[0mdebug[0m] [0m	-encoding[0m
+[0m[[0mdebug[0m] [0m	UTF-8[0m
+[0m[[0mdebug[0m] [0m	-d[0m
+[0m[[0mdebug[0m] [0m	/Users/kostasmamalis/development/personal/scala/scala-course/taf-scala/target/scala-2.10/test-classes[0m
+[0m[[0mdebug[0m] [0m	-bootclasspath[0m
+[0m[[0mdebug[0m] [0m	/Library/Java/JavaVirtualMachines/jdk1.7.0_17.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_17.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_17.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_17.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_17.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_17.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_17.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_17.jdk/Contents/Home/jre/lib/JObjC.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_17.jdk/Contents/Home/jre/classes:/Users/kostasmamalis/.sbt/boot/scala-2.10.1/lib/scala-library.jar[0m
+[0m[[0mdebug[0m] [0m	-classpath[0m
+[0m[[0mdebug[0m] [0m	/Users/kostasmamalis/development/personal/scala/scala-course/taf-scala/target/scala-2.10/test-classes:/Users/kostasmamalis/development/personal/scala/scala-course/taf-scala/target/scala-2.10/classes:/Users/kostasmamalis/development/personal/scala/scala-course/taf-scala/lib_managed/jars/org.scalatest/scalatest_2.10/scalatest_2.10-2.0.M5b.jar:/Users/kostasmamalis/development/personal/scala/scala-course/taf-scala/lib_managed/jars/org.scalamock/scalamock-scalatest-support_2.10/scalamock-scalatest-support_2.10-3.0.1.jar:/Users/kostasmamalis/development/personal/scala/scala-course/taf-scala/lib_managed/jars/org.scalamock/scalamock-core_2.10/scalamock-core_2.10-3.0.1.jar:/Users/kostasmamalis/development/personal/scala/scala-course/taf-scala/lib_managed/jars/org.scala-lang/scala-reflect/scala-reflect-2.10.0.jar[0m
+[0m[[0mdebug[0m] [0mScala compilation took 1.266341 s[0m
+[0m[[0mdebug[0m] [0mStep 2 changed sources and immdediate dependencies:[0m
+[0m[[0mdebug[0m] [0m	Set(/Users/kostasmamalis/development/personal/scala/scala-course/taf-scala/src/test/scala/net/masterthought/AgentSpec.scala)[0m
+[0m[[0mdebug[0m] [0mNon-trivial strongly connected components: [0m
+[0m[[0mdebug[0m] [0m	[0m
+[0m[[0mdebug[0m] [0mStep 2 invalidated sources:[0m
+[0m[[0mdebug[0m] [0m	Set(/Users/kostasmamalis/development/personal/scala/scala-course/taf-scala/src/test/scala/net/masterthought/AgentSpec.scala)[0m
