@@ -18,7 +18,8 @@ scalacOptions ++= Seq(
 
 libraryDependencies ++= Seq(
   "org.scalatest" %% "scalatest" % "2.0.M5b" % "test",
-  "org.scalamock" %% "scalamock-scalatest-support" % "3.0.1" % "test"
+  "org.scalamock" %% "scalamock-scalatest-support" % "3.0.1" % "test",
+  "org.seleniumhq.selenium" %% "selenium-java" % "2.31.0"
 )
 
 parallelExecution in Test := true
@@ -31,4 +32,7 @@ initialCommands in console := "import net.masterthought._"
 
 //initialCommands in (Test, console) <<= (initialCommands in console)(_ + ",TestData._")
 
-scalariformSettings
+//scalariformSettings
+
+
+resolvers += "Local Maven Repository" at "file:///"+Path.userHome+"/.m2/repository"
