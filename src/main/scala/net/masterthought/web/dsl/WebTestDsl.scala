@@ -41,6 +41,7 @@ object executor extends App {
   val webTest = new WebTestDsl(Agent())
   webTest.parseAll(webTest.actionOnElement, """performing click on element located by Id "test"""") match  {
     case webTest.Success(_,t) => println("Executing: \"" + t.asInstanceOf[CharSequenceReader].source.toString +"\"")
+    case _ => println("error in parsing line")
   }
 
   println(webTest.result)
