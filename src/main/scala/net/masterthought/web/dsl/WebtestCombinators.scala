@@ -5,13 +5,6 @@ import net.masterthought.Agent
 import org.openqa.selenium.{By, WebDriver}
 import util.parsing.input.CharSequenceReader
 
-/**
- * Created with IntelliJ IDEA.
- * User: kostasmamalis
- * Date: 16/05/2013
- * Time: 14:05
- * To change this template use File | Settings | File Templates.
- */
 case class WebTestDsl(agent:Agent) extends JavaTokenParsers{
 
   case class Click(agent:Agent, by:By){
@@ -19,24 +12,16 @@ case class WebTestDsl(agent:Agent) extends JavaTokenParsers{
       def apply = driver.findElement(by).click()
   }
 
+  var result : String = ""
 
-  def PerformWebAction(agent: Agent, parser: WebTestDsl.this.type#Parser[Object]) : String = {
-    println(parser)
-    parser.toString
-  }
+  def PerformWebAction(agent: Agent, parser: WebTestDsl.this.type#Parser[Object]) : String = result
 
   def actionOnElement = action ~ prefix ~ item  ^^ {
     case a ~ p ~ i =>  (PerformWebAction(agent,item))
-  }
-
-
-  def actionOnElement2 = action ~ string ^^ {
-    case a ~ s => println
+    case _ => throw new RuntimeException
   }
 
   def string = stringLiteral
-
-  var result : String = ""
 
   def action = "performing" ~> actions
   def actions = "click" |"read" | "clear"
@@ -55,8 +40,9 @@ object executor extends App {
 
   val webTest = new WebTestDsl(Agent())
   webTest.parseAll(webTest.actionOnElement, """performing click on element located by Id "test"""") match  {
-    case webTest.Success(_,t) => println(t.asInstanceOf[CharSequenceReader].source.toString)
+    case webTest.Success(_,t) => println("Executing: \"" + t.asInstanceOf[CharSequenceReader].source.toString +"\"")
   }
+
   println(webTest.result)
 
 }
