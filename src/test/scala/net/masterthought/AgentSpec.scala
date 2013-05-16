@@ -69,6 +69,8 @@ class AgentSpec extends WordSpec with MustMatchers {
       agent.recallFromMemory(default, default) must be === default
     }
   }
+
+
 }
 
 case class MyClass(name: String)
