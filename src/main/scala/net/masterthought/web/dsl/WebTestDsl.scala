@@ -9,7 +9,7 @@ case class WebTestDsl(agent:Agent) extends JavaTokenParsers{
 
   case class Click(agent:Agent, by:By){
       val driver = agent.use("driver").asInstanceOf[WebDriver]
-      def apply = driver.findElement(by).click()
+      def apply = driver.findElement(by).click
   }
 
   var result : String = ""
